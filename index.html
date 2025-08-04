@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavior</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;500&display=swap');
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(180deg, #1e3a8a, #22d3ee);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            padding: 50px 20px;
+            color: #fff;
+        }
+        .header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3em;
+            margin: 0;
+        }
+        .header h1 span {
+            color: #22d3ee;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #22d3ee;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+        .btn.secondary {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .services, .about, .contact {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .services-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            width: 45%;
+            text-align: left;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .service-card img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btn-more {
+            background: linear-gradient(90deg, #facc15, #22d3ee);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .contact-form button {
+            background: #22d3ee;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+        .footer {
+            background: #facc15;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 5px 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Especialistas em Automação e <span>Inteligência Artificial</span> para empresas</h1>
+            <p>Transformamos processos manuais em soluções inteligentes que impulsionam o crescimento do seu negócio</p>
+            <a href="#" class="btn">Começar Agora</a>
+            <a href="#" class="btn secondary">Conhecer Soluções</a>
+        </div>
+    </div>
+    <div class="services container">
+        <h2>Chatbots Inteligentes</h2>
+        <p>Atendimento 24/7 com IA avançada</p>
+        <h2>Automação Completa</h2>
+        <p>Fluxos automatizados com n8n</p>
+        <h2>Integração de APIs</h2>
+        <p>Conectamos todas suas plataformas</p>
+    </div>
+    <div class="about container">
+        <h2>Sobre a Cavior</h2>
+        <h3>Transformando Negócios com Tecnologia Inteligente</h3>
+        <p>A Cavior oferece soluções inteligentes para automação de processos, integração de sistemas e uso de IA aplicada ao seu negócio. Atuamos com foco em pequenos e médios negócios que desejam crescer com tecnologia acessível.</p>
+        <ul>
+            <li>Soluções personalizadas para cada negócio</li>
+            <li>Implementação rápida e eficiente</li>
+            <li>Suporte técnico especializado</li>
+            <li>Tecnologia de ponta acessível</li>
+        </ul>
+        <div class="about-cards">
+            <div>Foco: Resultados mensuráveis para seu negócio</div>
+            <div>Equipe: Especialistas em automação e IA</div>
+            <div>Crescimento: Soluções que escalam com seu negócio</div>
+        </div>
+    </div>
+    <div class="services container">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos soluções completas em automação e inteligência artificial para transformar seu negócio</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://via.placeholder.com/300x200/22d3ee/fff?text=Chatbot" alt="Chatbot">
+                <h3>Criação de bots de atendimento com inteligência artificial</h3>
+                <p>Desenvolva chatbots inteligentes que atendem seus clientes 24/7, com capacidade de entender contexto e resolver problemas complexos automaticamente.</p>
+                <ul>
+                    <li>Integração com WhatsApp</li>
+                    <li>IA conversacional avançada</li>
+                    <li>Análise de sentimentos</li>
+                    <li>Escalabilidade automática</li>
+                </ul>
+                <button class="btn-more">Saiba Mais</button>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/300x200/22d3ee/fff?text=API+Integration" alt="API Integration">
+                <h3>Integração de plataformas via API</h3>
+                <p>Conecte todos os seus sistemas e plataformas para que trabalhem em harmonia, eliminando trabalho manual e duplicação de dados.</p>
+                <ul>
+                    <li>Sincronização em tempo real</li>
+                    <li>Múltiplas plataformas</li>
+                    <li>Segurança avançada</li>
+                    <li>Monitoramento 24/7</li>
+                </ul>
+                <button class="btn-more">Saiba Mais</button>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/300x200/22d3ee/fff?text=Automation" alt="Automation">
+                <h3>Automação de fluxos com n8n</h3>
+                <p>Automatize processos complexos de negócio usando n8n, criando workflows inteligentes que economizam tempo e reduzem erros.</p>
+                <ul>
+                    <li>Workflows visuais</li>
+                    <li>Triggers automáticos</li>
+                    <li>Condições inteligentes</li>
+                    <li>Integrações limitadas</li>
+                </ul>
+                <button class="btn-more">Saiba Mais</button>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/300x200/22d3ee/fff?text=Consultoria" alt="Consultoria">
+                <h3>Consultoria em digitalização de processos</h3>
+                <p>Analisamos seus processos atuais e criamos uma estratégia completa de digitalização para maximizar eficiência e produtividade.</p>
+                <ul>
+                    <li>Auditoria completa</li>
+                    <li>Roadmap estratégico</li>
+                    <li>ROI garantido</li>
+                    <li>Acompanhamento contínuo</li>
+                </ul>
+                <button class="btn-more">Saiba Mais</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact container">
+        <h2>Entre em Contato</h2>
+        <p>Pronto para transformar seu negócio? Entre em contato conosco e descubra como podemos ajudar</p>
+        <div class="contact-info">
+            <h3>Vamos Conversar</h3>
+            <p>Nossa equipe está pronta para entender suas necessidades e criar soluções personalizadas para o seu negócio. Entre em contato hoje mesmo!</p>
+            <p><strong>E-mail</strong><br>contato@cavior.com.br</p>
+            <p><strong>WhatsApp</strong><br>Resposta rápida via WhatsApp</p>
+            <p><strong>Localização</strong><br>Atendimento nacional online</p>
+            <p><strong>Dica</strong><br>Quanto mais detalhes você compartilhar sobre seu negócio e necessidades, melhor poderemos preparar uma proposta personalizada para você.</p>
+        </div>
+        <div class="contact-form">
+            <h3>Solicite uma Consulta</h3>
+            <input type="text" placeholder="Seu nome completo" required>
+            <input type="text" placeholder="Nome da empresa" required>
+            <input type="email" placeholder="seu@email.com" required>
+            <input type="tel" placeholder="(11) 9999-9999" required>
+            <input type="text" placeholder="Ex: Chatbot, Automação, API, Consultoria" required>
+            <textarea placeholder="Conte-nos sobre seu projeto e como podemos ajudar..."></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <strong>Cavior</strong><br>
+            Especialistas em automação e inteligência artificial, oferecendo soluções inovadoras para empresas que buscam crescimento através da tecnologia.
+        </div>
+        <div>
+            <strong>Serviços</strong><br>
+            Chatbots com IA<br>
+            Integração de APIs<br>
+            Automação n8n<br>
+            Consultoria Digital
+        </div>
+        <div>
+            <strong>Empresa</strong><br>
+            Sobre Nós<br>
+            Nossos Serviços<br>
+            Contato<br>
+            Blog
+        </div>
+        <div>
+            © 2025 Cavior Soluções em Informática Ltda. Todos os direitos reservados.<br>
+            <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
+        </div>
+    </div>
+</body>
+</html>
